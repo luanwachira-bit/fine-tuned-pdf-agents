@@ -1,0 +1,21 @@
+{
+  "name": "Python 3 Default",
+  "image": "mcr.microsoft.com/devcontainers/python:3.10-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "njpwerner.autodocstring"
+      ]
+    }
+  },
+  // Forward the port for any web-based UIs you might build
+  "forwardPorts": [8501],
+  // Run a command after the container is created
+  "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt"
+}

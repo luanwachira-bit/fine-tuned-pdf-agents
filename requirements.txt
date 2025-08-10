@@ -1,0 +1,13 @@
+# Core ML/NLP Libraries
+torch
+transformers
+sentence-transformers
+accelerate
+bitsandbytes
+
+# PDF Processing
+PyMuPDF
+
+# Utility
+tqdm
+numpy
